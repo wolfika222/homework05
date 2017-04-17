@@ -23,10 +23,11 @@ public class MatrixOperation implements IMatrixOperation {
         int[][] mat = new int[n][m];
         for (int i = 0; i < mat.length; i++) {
             for (int j = 0; j < mat.length; j++) {
-                mat[i][j] = random.nextInt(max - min) + min;
+                mat[i][j] = random.nextInt((max + 1) - min) + min;
                 System.out.print(mat[i][j] + " ");
             }
             System.out.println();
-        } return mat;
+        }
+        return mat;
     }
 }

@@ -21,8 +21,8 @@ public class MatrixOperation implements IMatrixOperation {
     public int[][] initMatrixRandomNumbers(int n, int m, int min, int max) {
         Random random = new Random();
         int[][] mat = new int[n][m];
-        for (int i = 0; i < mat.length; i++) {
-            for (int j = 0; j < mat.length; j++) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
                 mat[i][j] = random.nextInt((max + 1) - min) + min;
                 System.out.print(mat[i][j] + " ");
             }

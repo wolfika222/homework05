@@ -27,7 +27,7 @@ public class Sort implements ISort {
                     int v = array[j + 1];
                     array[j + 1] = array[j];
                     array[j] = v;
-                    swap += swap;
+                    ++swap;
                 }
             }
             if (swap == 0) {

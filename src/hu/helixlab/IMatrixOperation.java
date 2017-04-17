@@ -6,4 +6,5 @@ package hu.helixlab;
 public interface IMatrixOperation {
 
     void printMatrix(int matrix[][]);
+    int[][] initMatrixRandomNumbers(int n, int m, int min, int max);
 }

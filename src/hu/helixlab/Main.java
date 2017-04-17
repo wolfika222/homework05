@@ -11,5 +11,6 @@ public class Main {
         sort.bubbleSort(bubble);
         System.out.println();
         matrixOperation.printMatrix(matrix);
+        matrixOperation.initMatrixRandomNumbers(4,4,5,15);
     }
 }

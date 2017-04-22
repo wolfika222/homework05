@@ -30,4 +30,19 @@ public class MatrixOperation implements IMatrixOperation {
         }
         return mat;
     }
+
+    public int[][] multiplyWithScalar(int scalar, int matrix[][]){
+
+        for (int i = 0; i < matrix.length ; i++) {
+            for (int j = 0; j < matrix[i].length ; j++) {
+                matrix[i][j] = matrix[i][j] * scalar;
+            }
+        }
+        return matrix;
+    }
+
+    public int[][] sum(int matrix[][], int matrix1[][]){
+        int[][] mat = new int[matrix.length][matrix.length];
+        return mat;
+    }
 }

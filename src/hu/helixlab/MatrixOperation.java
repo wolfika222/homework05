@@ -42,7 +42,7 @@ public class MatrixOperation implements IMatrixOperation {
     }
 
     public int[][] sum(int matrix[][], int matrix1[][]){
-        int[][] mat = new int[matrix.length][matrix.length];
+        int[][] mat = new int[matrix.length][matrix[0].length];
 
         for (int i = 0; i < matrix.length ; i++) {
             for (int j = 0; j < matrix[i].length ; j++) {
